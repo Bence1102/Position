@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <title>Szente Bence</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Position</h1>
+        </header>
+        <nav>
+            <ul class="kulso">
+                <li><a href="#">menü</a></li>
+                <li class="dropdown">
+                    <a href="#">menü</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">almenü</a></li>
+                        <li><a href="#">almenü</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">menü</a></li>
+            </ul>
+        </nav>
+        <section class="felugro">
+            <div id="ablak">
+                <span class="bezar" onclick="bezar()">X</span>
+                <form>
+                    <fieldset>
+                        <legend>Tetszik ez a pozicio?</legend>
+                        <label for="igen">Igen</label>
+                        <input type="radio" name="question" id="igen">
+                        <label for="nem">Nem</label>
+                        <input type="radio" name="question" id="NEM">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="galeria">
+            <img id="nagyKep" src="kepek/AC.jpg" alt="Nagy kép">
+        </section>
+        <section class="kepek">
+            <div class="kiskep" data-large-src="image1.jpg">
+                <img src="kepek/AC.jpg" alt="Kis kép 1">
+            </div>
+            <div class="kiskep" data-large-src="image2.jpg">
+                <img src="kepek/AC2 .jpg" alt="Kis kép 2">
+            </div>
+            <div class="kiskep" data-large-src="image3.jpg">
+                <img src="kepek/AC3.jpg" alt="Kis kép 3">
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </main>
+    
+</body>
+<script>
+    function bezar() {
+        console.log("?");
+        document.getElementById("ablak").style.display = "none";
+    }
+</script>
+</html>
